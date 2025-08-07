@@ -1,0 +1,27 @@
+Programação orientada a objetos
+
+Parâmetros recebidos por métodos:
+Em Java, ao passar valores para métodos, é importante entender a diferença entre:
+
+🔹 1. Tipos Primitivos (int, double, char, etc.)
+São passados por valor.
+
+Isso significa que é criada uma cópia do valor original para ser usada dentro do método.
+
+Alterações feitas dentro do método não afetam a variável original.
+
+📌 Analogia:
+É como tirar uma cópia da sua folha de prova e entregar para um amigo.
+Ele pode riscar, apagar, mudar o que quiser — mas a sua folha original continua intacta.
+
+🔹 2. Tipos de Referência (objetos criados com new)
+São passados por valor da referência (ou seja, do "endereço" do objeto).
+
+Tanto o método quanto quem chamou estão acessando o mesmo objeto na memória.
+
+Alterações nas propriedades do objeto afetam o original.
+
+📌 Analogia:
+É como dividir um guarda-roupa com alguém.
+Se você coloca uma roupa azul, e a outra pessoa entra e coloca uma roupa verde no mesmo espaço, a azul foi substituída — porque ambos estão mexendo no mesmo lugar.
+
