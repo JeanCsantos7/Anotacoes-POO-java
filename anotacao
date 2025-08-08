@@ -25,3 +25,24 @@ Alterações nas propriedades do objeto afetam o original.
 É como dividir um guarda-roupa com alguém.
 Se você coloca uma roupa azul, e a outra pessoa entra e coloca uma roupa verde no mesmo espaço, a azul foi substituída — porque ambos estão mexendo no mesmo lugar.
 
+This -
+
+VarArgs - o varargs é uma maneira mais simplificada de passar um número indefinido de parâmetros, utilizando reticências no final do nome do parametro por exemplo.
+
+public class Numeros{
+
+ public somaNumeros(int... numeros){
+   int total = 0;
+    for (int num : numeros) {
+        total += num;
+    }
+    System.out.println("Soma: " + total);
+ 
+ }
+
+forma de uso em outra classe = 
+somaNumeros(20, 29, 39, 55)
+
+}
+
+lembrando que só posso ter um varArgs por método e ele deve ser sempre o ultimo parametro.
