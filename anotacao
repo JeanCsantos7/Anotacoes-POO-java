@@ -25,9 +25,9 @@ Alterações nas propriedades do objeto afetam o original.
 É como dividir um guarda-roupa com alguém.
 Se você coloca uma roupa azul, e a outra pessoa entra e coloca uma roupa verde no mesmo espaço, a azul foi substituída — porque ambos estão mexendo no mesmo lugar.
 
-This -
+- This -
 
-VarArgs - o varargs é uma maneira mais simplificada de passar um número indefinido de parâmetros, utilizando reticências no final do nome do parametro por exemplo.
+- VarArgs - o varargs é uma maneira mais simplificada de passar um número indefinido de parâmetros, utilizando reticências no final do nome do parametro por exemplo.
 
 public class Numeros{
 
@@ -46,3 +46,31 @@ somaNumeros(20, 29, 39, 55)
 }
 
 lembrando que só posso ter um varArgs por método e ele deve ser sempre o ultimo parametro.
+
+- Private : O private é um modificador de acesso que limita a visualização e alteração de atributos do objeto para que ele só possa ser controlado dentro do próprio objeto, com isso a forma de manipular os atributos que estão privados existem os setters e os getters.
+- Setter: o setter ou a forma como a convenção é realizada setAlgumaCoisa serve para setar/atribuir um valor a variavel, por exemplo seria 
+ public void setNome(String nome){
+ this.nome = nome;
+ }
+
+- Geter: o Getter ou a forma como a convenção é realizada getAlgumaCoisa serve para pegar o valor atual que está atribuido a aquela variável, por exemplo a forma de uso é 
+public String getNome() {
+        System.out.println("Nome Atual: " + Nome);
+        return carrinho ;
+
+    }
+
+- Sobrecarga de métodos: A sobrecarga de métodos basicamente é repetir o mesmo método exatamente o mesmo nome só mudando que ele não pode ser ambíguo ou seja não pode ter os mesmos parâmetros, eu vou repetir o método só que com novos parâmetros, vamos exemplificar isso:
+Vamos supor que temos o sistema de uma lanchonete e temos um botão chamado fazer pedido, nós não vamos criar um botão pra cada variação de pedido que os clientes vão fazer, ai que entra a sobrecarga nós podemos ir criando parametros com as variações de lanches que podem vir a serem solicitiados por exemplo.
+
+public void fazerPedido(String hamburguer){
+System.out.println("Método 1")
+}
+
+public void fazerPedido(String hamburguer, String bebida){
+System.out.println("Método 2")
+}
+
+public void fazerPedido(String hamburguer, String bebida, String sobremesa){
+System.out.println("Método 3")
+}
