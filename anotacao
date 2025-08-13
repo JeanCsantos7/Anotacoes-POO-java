@@ -74,3 +74,17 @@ System.out.println("Método 2")
 public void fazerPedido(String hamburguer, String bebida, String sobremesa){
 System.out.println("Método 3")
 }
+
+- Construtores - Os  construtores são métodos especiais que usamos para inicializar um objeto, dentro dele nos definimos atributos que são obrigátorios de serem preenchidos quando for inicializado, podemos dizer que o construtor funciona da seguinte maneira nós temos uma receita de bolo com ingredientes e forma, o construtor pega todos esses igredientes e junta eles que seriam os tais atributos.
+a declaração de um atributo é da seguinte maneira:
+
+public String nome;
+public int idade;
+
+public NomeConstrutor(String nome, int idade){
+ this.nome = nome;
+this.idade = idade;
+}
+
+- Static - O Static é um modificador que pertence a classe e não ao objeto, eu não preciso de um objeto específico para poder iniciar ele ou seja não preciso instanciar com "new alguma coisa()" ele é como se fosse uma caixa de brinquedos onde todas crianças guardam seus brinquedos, ao invés de cada um ter sua caixa com o static qualquer um independente do objeto comparrilha dessa caixa,
+
